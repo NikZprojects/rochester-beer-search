@@ -5,7 +5,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Rochester Real Beer Expo Unofficial Search Page",
+  title: "Unofficial Rochester Real Beer Expo Search Page",
   description: "Unofficial Search page for Rochester Real Beer Expo 2023",
 };
 

@@ -1,7 +1,6 @@
 import listOfBreweries from "../assets/formattedBreweriesAndBeers.json";
 
 export default function BreweriesList({ searchTerm }) {
-  console.log(searchTerm);
   return (
     <div>
       {listOfBreweries

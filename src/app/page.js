@@ -8,8 +8,8 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-xl font-bold">
-        Rochester Beer Expo 2023's <i>Unofficial </i> Search Page:
+      <h1 className="text-xl font-bold text-center">
+        <i>Unofficial </i> Search Page for Rochester Real Beer Expo 2023
       </h1>
       <Image
         className="pt-10 pb-10"

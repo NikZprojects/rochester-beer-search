@@ -1,0 +1,568 @@
+[
+  {
+    "Brewery": "Rohrbach Brewing",
+    "Beers": [
+      "Radle On radler",
+      "Sunday Brunch IPA",
+      "Jill and the Giant Peach sour",
+      "Barrel-aged Tripel"
+    ]
+  },
+  {
+    "Brewery": "Genesee Brew House",
+    "Beers": [
+      "Grape Pilsner",
+      "Orange Mosaic Cream Ale",
+      "TBD"
+    ]
+  },
+  {
+    "Brewery": "Copper Leaf",
+    "Beers": [
+      "Apricot Peach Wheat",
+      "Hazy IPA",
+      "Summer Ale",
+      "Juice News Hazy DIPA"
+    ]
+  },
+  {
+    "Brewery": "Eli Fish",
+    "Beers": [
+      "Wild Raspberry Pillow Talk (BA saison)",
+      "Heavy Maple (2023)",
+      "Foudre-aged Vienna Lager",
+      "Some big surprises"
+    ]
+  },
+  {
+    "Brewery": "Fifth Frame",
+    "Beers": [
+      "Blood Bath & Beyond (Blood Brothers collab) heavily fruited sour",
+      "Lucerna lager",
+      "Ice cream machine (!!!)"
+    ]
+  },
+  {
+    "Brewery": "Frequentem",
+    "Beers": [
+      "Just Fruit (TBD fruits) heavily fruited sour",
+      "Natural Flavors Tangerine sour IPA",
+      "12-degree Czech Pale Lage"
+    ]
+  },
+  {
+    "Brewery": "Grow",
+    "Beers": [
+      "Highborn Cold Pale Ale",
+      "Forest Aura Hazy IPA",
+      "Peach Brandy Barrel-Aged Barleywine"
+    ]
+  },
+  {
+    "Brewery": "Irondequoit",
+    "Beers": [
+      "Liberator doppelbock",
+      "Mocha Berrily Alive sour"
+    ]
+  },
+  {
+    "Brewery": "K2 Brothers",
+    "Beers": [
+      "Imperial Red Rye Ale",
+      "Italian Pilsner",
+      "Imperial Blue Razz Sour",
+      "BA Imperial Stout (aged in Journeyman barrel)",
+      "Journeyman Wild Sour"
+    ]
+  },
+  {
+    "Brewery": "Iron Tug",
+    "Beers": [
+      "Fathom Lines IPA",
+      "Avast! Blueberry Cobbler Sour"
+    ]
+  },
+  {
+    "Brewery": "Knucklehead",
+    "Beers": [
+      "Tainted Haze IPA",
+      "Watermelon Kolsch"
+    ]
+  },
+  {
+    "Brewery": "Laurentide",
+    "Beers": [
+      "West Coast IPA",
+      "Earl Grey IPA",
+      "Mango Wheat Ale"
+    ]
+  },
+  {
+    "Brewery": "Mortalis",
+    "Beers": [
+      "Vanilla Ophion BA stout",
+      "Mortalis in the Park DIPA",
+      "Hydra Pistachio Molten Cake",
+      "Gemini Strawberry + Kiwi + Starburst"
+    ]
+  },
+  {
+    "Brewery": "Nine Spot",
+    "Beers": [
+      "Town of Porter Porter",
+      "NSB ESB",
+      "Roy Lichtenhainer lilac smoked sour wheat ale"
+    ]
+  },
+  {
+    "Brewery": "Noble Shepherd",
+    "Beers": [
+      "Pistachio Pudding Sour",
+      "New Zealand Pilsner w/ Sauvignon Blanc",
+      "mixed cans"
+    ]
+  },
+  {
+    "Brewery": "Okay Beer",
+    "Beers": [
+      "Curuba (Passionfruit) Kolsch",
+      "Oak-aged Local Cream Ale",
+      "TBD"
+    ]
+  },
+  {
+    "Brewery": "Other Half",
+    "Beers": [
+      "More Jasper than All Jasper TIPA",
+      "HDHC Broccoli’s Axe DIPA",
+      "Mmm… Fruit (Strawberry Banana) sour",
+      "Past and Present"
+    ]
+  },
+  {
+    "Brewery": "Rising Storm",
+    "Beers": [
+      "Mango Guava Coconut It Was Written sour IPA",
+      "All of the Lights (Mosaic) hazy pale ale",
+      "The Union dry-hopped Pilsner"
+    ]
+  },
+  {
+    "Brewery": "Roc",
+    "Beers": [
+      "WWHD (What Would Heather Drink) dry-hopped Helles lager",
+      "Raspberry Miami Weisse sour"
+    ]
+  },
+  {
+    "Brewery": "Sager",
+    "Beers": [
+      "Gladiator Imperial Italian Pilsner",
+      "Jessica Rabit Red Ale",
+      "Burton-on-Genesee English IPA",
+      "King Charles Porter"
+    ]
+  },
+  {
+    "Brewery": "Silver Lake",
+    "Beers": [
+      "Barrel-Aged Midnight Creep imperial (slightly sour and funky) stout",
+      "Wheat Saison",
+      "Barrel-aged brett Grisette or German Pilsner"
+    ]
+  },
+  {
+    "Brewery": "Stoneyard",
+    "Beers": [
+      "Hats Off #1 (barrel fermented sour)",
+      "Citrus Fruit Punch Nectar",
+      "Coconut Shrimp Kareem"
+    ]
+  },
+  {
+    "Brewery": "Strangebird",
+    "Beers": [
+      "Wyvern DIPA",
+      "Boat Shoes Pilsner",
+      "Wine BA Savoir Vivre Tripel"
+    ]
+  },
+  {
+    "Brewery": "Swiftwater",
+    "Beers": [
+      "Swifty Shifty lemon light lager",
+      "Kolsch",
+      "Fruit Float (Pineapple Orange Guava) heavily fruited sour",
+      "Dry-hopped saison (Bergamot)"
+    ]
+  },
+  {
+    "Brewery": "Three Heads",
+    "Beers": [
+      "Barrel-aged Barleywine",
+      "Rye Dye Rye IPA"
+    ]
+  },
+  {
+    "Brewery": "Young Lion",
+    "Beers": [
+      "Raspberry Sour",
+      "Mexican Lager",
+      "Mocha Stout"
+    ]
+  },
+  {
+    "Brewery": "Katboocha",
+    "Beers": [
+      "Kombucha mix"
+    ]
+  },
+  {
+    "Brewery": "Happy Gut",
+    "Beers": [
+      "Mix of tea ferments"
+    ]
+  },
+  {
+    "Brewery": "Seed + Stone",
+    "Beers": [
+      "Sima mead",
+      "Blackberry mead",
+      "Azacca God cider",
+      "Citrus Splash cider"
+    ]
+  },
+  {
+    "Brewery": "Blue Barn",
+    "Beers": [
+      "Jostaberry Jam cider",
+      "Blueberry cider"
+    ]
+  },
+  {
+    "Brewery": "Embark",
+    "Beers": [
+      "Blueberry Peach cider",
+      "Strawberry Rhubard cider",
+      "Dreamcicle heavily fruited cider",
+      "Cider Orchard series"
+    ]
+  },
+  {
+    "Brewery": "Illumination",
+    "Beers": [
+      "Variety of meads"
+    ]
+  },
+  {
+    "Brewery": "Community Beer Works",
+    "Beers": [
+      "CBW R&D IPA #10",
+      "No Illusions (collab with Unified)"
+    ]
+  },
+  {
+    "Brewery": "Thin Man",
+    "Beers": [
+      "Wake and Lake pineapple IPA",
+      "Certified Squid fruited sour"
+    ]
+  },
+  {
+    "Brewery": "Resurgence",
+    "Beers": [
+      "Greenheart IPA",
+      "On the Tee sour"
+    ]
+  },
+  {
+    "Brewery": "Wayland",
+    "Beers": [
+      "Larkspur wit",
+      "Full Send Citra IPA",
+      "Fun Fact West Coast Pilsner",
+      "Festa cherry sour"
+    ]
+  },
+  {
+    "Brewery": "BriarBrothers",
+    "Beers": [
+      "Public Secret imperial coffee vanilla stout",
+      "Woah… That’s Nelson (imperial oat cream IPA)",
+      "50 Kickback blueberry coffee vanilla sour."
+    ]
+  },
+  {
+    "Brewery": "Pressure Drop",
+    "Beers": [
+      "Something ridiculously fresh and hoppy",
+      "Rye BA Blackalicious"
+    ]
+  },
+  {
+    "Brewery": "Big Ditch",
+    "Beers": [
+      "Mudlarked Tiramisu imperial stout",
+      "Pineapple Burner IPA",
+      "Flow Rider citrus ale",
+      "Pay Per View hazy IPA"
+    ]
+  },
+  {
+    "Brewery": "42 North",
+    "Beers": [
+      "Solshine lager",
+      "Cherry Vanilla gose",
+      "mix of BA wild ales"
+    ]
+  },
+  {
+    "Brewery": "Underground Beer Lab",
+    "Beers": [
+      "Defies Logic pale ale",
+      "Mix of IPAs"
+    ]
+  },
+  {
+    "Brewery": "Trophy",
+    "Beers": [
+      "Cloud Surfer modern IPA",
+      "Cakebier (BA pastry stout)"
+    ]
+  },
+  {
+    "Brewery": "Wayward Lane",
+    "Beers": [
+      "Earthrise on the Moon session stout",
+      "Brunnendorf NYS Hefeweizen",
+      "Quercus double barrel-aged English barleywine"
+    ]
+  },
+  {
+    "Brewery": "Steuben",
+    "Beers": [
+      "Perle Kolsch",
+      "Coldbrook Pilsner"
+    ]
+  },
+  {
+    "Brewery": "Prison City",
+    "Beers": [
+      "Mass Riot IPA",
+      "Barrel-aged Wham Whams imperial stout"
+    ]
+  },
+  {
+    "Brewery": "Human Robot",
+    "Beers": [
+      "Hallertau Pilsner"
+    ]
+  },
+  {
+    "Brewery": "Godspeed",
+    "Beers": [
+      "Sklepník (Pitch Lined Plzen-Style Pale Lager *conditioned in pitch lined Pilsner Urquell barrels)",
+      "Buh Original Czech Pale Lager (Czechvar collaboration)"
+    ]
+  },
+  {
+    "Brewery": "Wild East",
+    "Beers": [
+      "Subtle Reference (Threes collab) foeder-aged Czech lager",
+      "Turnstyle Nopal (prickly pear margarita-inspired Berliner weisse)",
+      "Punk Lullaby West Coast IPA",
+      "Prescience (brett blonde ale)"
+    ]
+  },
+  {
+    "Brewery": "KCBC",
+    "Beers": [
+      "Venomous Villains West Coast IPA",
+      "Beach Zombie sour"
+    ]
+  },
+  {
+    "Brewery": "Beer Tree",
+    "Beers": [
+      "Juiceland DIPA",
+      "Shandy",
+      "Lake Lager"
+    ]
+  },
+  {
+    "Brewery": "Lagunitas",
+    "Beers": [
+      "Island Beats IPA",
+      "Lagunitas Pils",
+      "Hoppy Refresher"
+    ]
+  },
+  {
+    "Brewery": "Allagash",
+    "Beers": [
+      "Hop Reach IPA",
+      "Seconds to Summer lager"
+    ]
+  },
+  {
+    "Brewery": "Froth",
+    "Beers": [
+      "Juice Life IPA",
+      "Liquid Lollypop (flavors TBD)"
+    ]
+  },
+  {
+    "Brewery": "Kettlehead",
+    "Beers": [
+      "Dreamstate DIPA",
+      "Pulpy IPA",
+      "Miami Weisse Berliner weisse",
+      "Elvis Lives imperial milk stout"
+    ]
+  },
+  {
+    "Brewery": "Old Thunder",
+    "Beers": [
+      "340 Lager",
+      "False Kingdom IPA"
+    ]
+  },
+  {
+    "Brewery": "Eredita",
+    "Beers": [
+      "Tact (Citra + Simcoe IPA)",
+      "Barred imperial coffee stout",
+      "PapaPils"
+    ]
+  },
+  {
+    "Brewery": "Finback",
+    "Beers": [
+      "Dot dot dot Pilsner",
+      "Grazing in the Ordinary BA stout",
+      "High Low DIPA",
+      "Sorta Queens DIPA"
+    ]
+  },
+  {
+    "Brewery": "Tin Barn",
+    "Beers": [
+      "Pacific Cooler sour",
+      "Back 40 IPA"
+    ]
+  },
+  {
+    "Brewery": "Sloop",
+    "Beers": [
+      "Das Jaegermeister IPA",
+      "Italian Pilsner"
+    ]
+  },
+  {
+    "Brewery": "Arkane",
+    "Beers": [
+      "Galaxy Kwest IPA",
+      "Pinkish Lemonade sour",
+      "Gimme Swelter sour",
+      "Disasterpiece"
+    ]
+  },
+  {
+    "Brewery": "Heavy Reel",
+    "Beers": [
+      "Luvv Creamsicle sour",
+      "Luvv Dole Whip sour",
+      "Coastline IPA"
+    ]
+  },
+  {
+    "Brewery": "Dewey",
+    "Beers": [
+      "El Trono Mexican lager",
+      "Pineapple Papaya Marmalade sour",
+      "Orange Peach Marmalade sour"
+    ]
+  },
+  {
+    "Brewery": "Imprint",
+    "Beers": [
+      "First Person Sipper IPA",
+      "Frio Lime Lager",
+      "Margarita Shandy",
+      "Origins Colombia Marshmallow Imperial Stout",
+      "Schmoojee Banana Mango Cake heavily fruited sour",
+      "Imployees Only rice lager"
+    ]
+  },
+  {
+    "Brewery": "Celestial",
+    "Beers": [
+      "Triple Stars TIPA",
+      "Double Stars DIPA",
+      "Electromagnet IPA",
+      "Polymath American light lager"
+    ]
+  },
+  {
+    "Brewery": "Blood Brothers",
+    "Beers": [
+      "Cactus Head IPA",
+      "Devil’s Trill DIPA",
+      "Paradise Lost Citrus Five Alive sour",
+      "Charles BA stout"
+    ]
+  },
+  {
+    "Brewery": "Aurora",
+    "Beers": [
+      "Bee sting cocktail sour",
+      "Blood Orange La Crema cream ale",
+      "Collab IPA"
+    ]
+  },
+  {
+    "Brewery": "Grimm",
+    "Beers": [
+      "Bright Lights IPA",
+      "Grimm Weisse",
+      "Saison Spritz"
+    ]
+  },
+  {
+    "Brewery": "Rare Form",
+    "Beers": [
+      "Confetti Mexican lager",
+      "Royal Coconut Cream Ale"
+    ]
+  },
+  {
+    "Brewery": "Jack’s Abby",
+    "Beers": [
+      "Ray Catcher rice lager",
+      "Lime Rickey tart lager"
+    ]
+  },
+  {
+    "Brewery": "Threes",
+    "Beers": [
+      "All or Nothing West Coast IPA",
+      "Vliet Pilsner"
+    ]
+  },
+  {
+    "Brewery": "Cinderlands",
+    "Beers": [
+      "Cindi’s Hard Mountain Tea",
+      "Dry Country West Coast-style Pilsner",
+      "Pittsburghenstraße (Franconian lager collab w/ Human Robot)"
+    ]
+  },
+  {
+    "Brewery": "Counterpart",
+    "Beers": [
+      "Where Eagles Have Landed hazy DIPA",
+      "Clockwork (Citra Simcoe) hazy IPA",
+      "Zombie (apricot, banana, orange, pineapple) smoothie sour"
+    ]
+  }
+]

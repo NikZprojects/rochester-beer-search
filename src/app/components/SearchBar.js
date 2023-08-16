@@ -1,4 +1,5 @@
 export default function SearchBar({ searchTerm, setSearchTerm }) {
+  console.log("test");
   return (
     <div className="w-96">
       <h1 className="text-center">Search Beers & Styles:</h1>

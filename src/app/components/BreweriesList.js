@@ -1,7 +1,7 @@
 import listOfBreweries from "../assets/formattedBreweriesAndBeers.json";
 
 export default function BreweriesList({ searchTerm }) {
-  const formatBeer = (beerName) => {
+  const formatTitle = (beerName) => {
     // Format to title case:
     beerName = beerName.replace(/\.$/, "");
     const beerSubstrings = beerName.split(" ");
@@ -20,8 +20,10 @@ export default function BreweriesList({ searchTerm }) {
       newBeerName += ` ${beerSubstring}`;
     }
     beerName = newBeerName;
+    return beerName;
+  };
 
-    // Bold the search Term:
+  const boldSearchQueryName = (beerName, searchTerm, fontWeightAdjustment) => {
     if (!searchTerm) {
       return <span>{beerName}</span>;
     }
@@ -41,9 +43,9 @@ export default function BreweriesList({ searchTerm }) {
         splitBeer.indexOf(beerSubstring) !== splitBeer.length - 1 ? (
           <span>
             {beerSubstring}
-            <b className="text-lg font-bold">
+            <span className={`font-${fontWeightAdjustment}`}>
               {searchTermsMatched[searchTermIndex]}
-            </b>
+            </span>
           </span>
         ) : (
           <span>{beerSubstring}</span>
@@ -55,7 +57,7 @@ export default function BreweriesList({ searchTerm }) {
   };
 
   return (
-    <div>
+    <div className="justify-start w-100">
       {listOfBreweries
         .filter((brewery) =>
           brewery.Beers.some(
@@ -67,10 +69,20 @@ export default function BreweriesList({ searchTerm }) {
         .sort((a, b) => (a.Brewery > b.Brewery ? 1 : -1))
         .map((breweryData, index) => (
           <div className="pt-8" key={index}>
-            <h1 className="text-lg font-bold">{breweryData.Brewery}</h1>
+            <h1 className="text-xl font-semibold text-left pb-2">
+              {boldSearchQueryName(
+                breweryData.Brewery,
+                searchTerm,
+                "extrabold"
+              )}
+            </h1>
             <ul className="list-disc pl-8">
               {breweryData.Beers.map((beer, beerIndex) => {
-                return <li key={beerIndex}>{formatBeer(beer)}</li>;
+                return (
+                  <li key={beerIndex}>
+                    {boldSearchQueryName(formatTitle(beer), searchTerm, "bold")}
+                  </li>
+                );
               })}
             </ul>
           </div>

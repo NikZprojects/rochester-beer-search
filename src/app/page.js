@@ -7,7 +7,7 @@ import React, { useState } from "react";
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col p-24">
       <h1 className="text-xl font-bold text-center">
         <i>Unofficial </i> Search Page for Rochester Real Beer Expo 2023
       </h1>

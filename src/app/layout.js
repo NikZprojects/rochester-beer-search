@@ -16,7 +16,10 @@ export default function RootLayout({ children }) {
         {children}
         <div className="text-center pb-5">
           Created and Designed by{" "}
-          <Link className="font-medium" href="https://www.nikzprojects.com">
+          <Link
+            className="font-medium text-sky-900 hover:text-sky-600"
+            href="https://www.nikzprojects.com"
+          >
             NikZProjects
           </Link>
         </div>

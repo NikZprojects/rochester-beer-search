@@ -1,6 +1,8 @@
+import Link from "next/link";
+import { useState } from "react";
 import listOfBreweries from "../assets/formattedBreweriesBeersLocations.json";
 
-export default function BreweriesList({ searchTerm }) {
+export default function BreweriesList({ searchTerm, section }) {
   const formatTitle = (beerName) => {
     // Format to title case:
     beerName = beerName.replace(/\.$/, "");
@@ -38,7 +40,6 @@ export default function BreweriesList({ searchTerm }) {
     const formattedSearch = [];
     let searchTermIndex = 0;
     for (const beerSubstring of splitBeer) {
-      console.log(searchTermIndex);
       formattedSearch.push(
         splitBeer.indexOf(beerSubstring) !== splitBeer.length - 1 ? (
           <span>
@@ -56,9 +57,24 @@ export default function BreweriesList({ searchTerm }) {
     return formattedSearch;
   };
 
+  const [sortByBrewery, setSortByBrewery] = useState(false);
+
   return (
     <div className="justify-start w-100">
+      {!section && (
+        <div className="w-100 mt-8 text-center">
+          <div
+            className="text-sky-600 cursor-pointer"
+            onClick={() => setSortByBrewery(!sortByBrewery)}
+          >
+            Sort by {sortByBrewery ? "Section" : "Brewery Name"}
+          </div>
+        </div>
+      )}
       {listOfBreweries
+        .filter((brewery) =>
+          section ? brewery.Section === section.toUpperCase() : true
+        )
         .filter((brewery) =>
           brewery.Beers.some(
             (beer) =>
@@ -66,7 +82,17 @@ export default function BreweriesList({ searchTerm }) {
               brewery.Brewery.toLowerCase().includes(searchTerm.toLowerCase())
           )
         )
-        .sort((a, b) => (a.Brewery > b.Brewery ? 1 : -1))
+        .sort((a, b) =>
+          sortByBrewery
+            ? a.Brewery > b.Brewery
+              ? 1
+              : -1
+            : a.Section === b.Section
+            ? parseInt(a.Subsection) - parseInt(b.Subsection)
+            : a.Section > b.Section
+            ? 1
+            : -1
+        )
         .map((breweryData, index) => (
           <div className="pt-8" key={index}>
             <h1 className="text-xl font-semibold text-left pb-2">
@@ -74,6 +100,18 @@ export default function BreweriesList({ searchTerm }) {
                 breweryData.Brewery,
                 searchTerm,
                 "extrabold"
+              )}{" "}
+              ({breweryData.Section}-{breweryData.Subsection})
+              {!section ? (
+                <Link
+                  className="text-sky-600 text-sm"
+                  href={`/section/${breweryData.Section.toLowerCase()}`}
+                >
+                  {" "}
+                  [Map to Section]
+                </Link>
+              ) : (
+                ""
               )}
             </h1>
             <ul className="list-disc pl-8">

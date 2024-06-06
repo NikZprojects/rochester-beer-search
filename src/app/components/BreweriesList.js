@@ -1,4 +1,4 @@
-import listOfBreweries from "../assets/formattedBreweriesAndBeers.json";
+import listOfBreweries from "../assets/formattedBreweriesBeersLocations.json";
 
 export default function BreweriesList({ searchTerm }) {
   const formatTitle = (beerName) => {

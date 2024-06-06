@@ -61,7 +61,7 @@ export default function BreweriesList({ searchTerm, section }) {
 
   return (
     <div className="justify-start w-100">
-      {!section && (
+      {!section && !searchTerm && (
         <div className="w-100 mt-8 text-center">
           <div
             className="text-sky-600 cursor-pointer"

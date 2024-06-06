@@ -15,7 +15,7 @@ export default function Home() {
         className="pt-10 pb-10 mx-auto"
         src="/rochester-real-beer-2024.png"
         height="200"
-        width="500"
+        width="200"
         alt="Rochester Beer Expo Promotional Image"
         style={{ width: "auto", height: "auto" }}
         priority

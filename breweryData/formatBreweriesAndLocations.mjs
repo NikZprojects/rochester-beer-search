@@ -4,6 +4,9 @@ const allBreweries = JSON.parse(
   fs.readFileSync("./breweriesBeersAndLocations.json")
 );
 
+//TODO: Update seperator if beer list format changes
+const beerSeperator = ",";
+
 const allFormattedData = [];
 for (const breweryData of allBreweries) {
   const formattedData = {
@@ -12,7 +15,7 @@ for (const breweryData of allBreweries) {
     Subsection: breweryData.Subsection,
     Beers: [],
   };
-  const beersAtBrewery = breweryData.Beers.split(";");
+  const beersAtBrewery = breweryData.Beers.split(beerSeperator);
   for (const beer of beersAtBrewery) {
     const formattedBeerName = beer.replace(".", "").trim();
     if (formattedBeerName) {

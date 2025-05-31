@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Rochester Real Beer Expo Unofficial Search Page",
-  description: "Unofficial Search page for Rochester Real Beer Expo 2024",
+  description: "Unofficial Search page for Rochester Real Beer Expo 2025",
 };
 
 export default function RootLayout({ children }) {

@@ -2,6 +2,10 @@ import Link from "next/link";
 import { useState } from "react";
 import listOfBreweries from "../assets/formattedBreweriesBeersLocations.json";
 
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 export default function BreweriesList({ searchTerm, section }) {
   const formatTitle = (beerName) => {
     // Format to title case:
@@ -30,11 +34,13 @@ export default function BreweriesList({ searchTerm, section }) {
       return <span>{beerName}</span>;
     }
 
+    const safeTerm = escapeRegExp(searchTerm.toLowerCase());
+
     const splitBeer = beerName.split(
-      new RegExp(`${searchTerm.toLowerCase()}`, "gi")
+      new RegExp(`${safeTerm.toLowerCase()}`, "gi")
     );
     const searchTermsMatched = [
-      ...beerName.matchAll(new RegExp(`${searchTerm.toLowerCase()}`, "gi")),
+      ...beerName.matchAll(new RegExp(`${safeTerm.toLowerCase()}`, "gi")),
     ];
 
     const formattedSearch = [];

@@ -1,68 +1,27 @@
+"use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import listOfBreweries from "../assets/formattedBreweriesBeersLocations.json";
+import BeerReviewModal from "./BeerReviewModal";
 
 function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function markItem(name) {
-  const stored = JSON.parse(localStorage.getItem("markedItems") || "[]");
-  if (!stored.includes(name)) {
-    stored.push(name);
-    localStorage.setItem("markedItems", JSON.stringify(stored));
-  }
-}
-
-function unmarkItem(name) {
-  const stored = JSON.parse(localStorage.getItem("markedItems") || "[]");
-  const updated = stored.filter((item) => item !== name);
-  localStorage.setItem("markedItems", JSON.stringify(updated));
-}
-
-function isMarked(name) {
-  const stored = JSON.parse(localStorage.getItem("markedItems") || "[]");
-  return stored.includes(name);
-}
-
-const getKey = (item) => item.toLowerCase(); // or any other stable unique string
-
 export default function BreweriesList({ searchTerm, section }) {
-  // const STORAGE_KEY = "markedBeers";
+  const STORAGE_KEY = "beerStates";
 
-  // const [markedItems, setMarkedItems] = useState(() => {
-  //   const stored = localStorage.getItem(STORAGE_KEY);
-  //   return stored ? new Set(JSON.parse(stored)) : new Set();
-  // });
+  const getKey = (item) => (item ? item.toLowerCase() : item); // or any other stable unique string
 
-  // useEffect(() => {
-  //   localStorage.setItem(STORAGE_KEY, JSON.stringify([...markedItems]));
-  // }, [markedItems]);
+  const [selectedBeer, setSelectedBeer] = useState(null);
 
-  // const getKey = (item) => item.toLowerCase();
-
-  // const toggleMark = (item) => {
-  //   const key = getKey(item);
-  //   setMarkedItems((prev) => {
-  //     const updated = new Set(prev);
-  //     if (updated.has(key)) {
-  //       updated.delete(key);
-  //     } else {
-  //       updated.add(key);
-  //     }
-  //     return updated;
-  //   });
-  // };
-
-  // const isItemMarked = (item) => markedItems.has(getKey(item));
+  const openModal = (beer) => setSelectedBeer(beer);
 
   const nextState = {
     none: "saved",
     saved: "checked",
     checked: "none",
   };
-
-  const STORAGE_KEY = "beerStates";
 
   const [beerStates, setBeerStates] = useState(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -73,18 +32,34 @@ export default function BreweriesList({ searchTerm, section }) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...beerStates]));
   }, [beerStates]);
 
-  const cycleBeerState = (beer) => {
+  const cycleBeerState = (beer, state = "") => {
     const key = getKey(beer);
     setBeerStates((prev) => {
       const newMap = new Map(prev);
       const current = newMap.get(key) || "none";
-      newMap.set(key, nextState[current]);
+      newMap.set(key, state ? state : nextState[current]);
       return newMap;
     });
   };
 
   const getBeerState = (beer) => {
     return beerStates.get(getKey(beer)) || "none";
+  };
+  const [beerRatings, setBeerRatings] = useState(() => {
+    const stored = localStorage.getItem("beerRatings");
+    return stored ? JSON.parse(stored) : {};
+  });
+
+  useEffect(() => {
+    localStorage.setItem("beerRatings", JSON.stringify(beerRatings));
+  }, [beerRatings]);
+
+  const updateBeerReview = (beer, updates) => {
+    const key = getKey(beer);
+    setBeerRatings((prev) => ({
+      ...prev,
+      [key]: { ...prev[key], ...updates },
+    }));
   };
 
   const formatTitle = (beerName) => {
@@ -157,6 +132,7 @@ export default function BreweriesList({ searchTerm, section }) {
           </div>
         </div>
       )}
+
       {listOfBreweries
         .filter((brewery) =>
           section ? brewery.Section === section.toUpperCase() : true
@@ -204,13 +180,18 @@ export default function BreweriesList({ searchTerm, section }) {
               {breweryData.Beers.map((beer, beerIndex) => {
                 return (
                   <li key={beerIndex}>
+                    <BeerReviewModal
+                      beer={beer}
+                      breweryData={breweryData}
+                      beerIndex={index}
+                      isOpen={!!selectedBeer}
+                      onClose={() => setSelectedBeer(null)}
+                      getKey={getKey}
+                      beerRatings={beerRatings}
+                      updateBeerReview={updateBeerReview}
+                      cycleBeerState={cycleBeerState}
+                    />
                     <div
-                      div
-                      onClick={() =>
-                        cycleBeerState(
-                          breweryData.Brewery + ":" + beer + beerIndex
-                        )
-                      }
                       style={{
                         cursor: "pointer",
                         color:
@@ -235,6 +216,24 @@ export default function BreweriesList({ searchTerm, section }) {
                           ) === "checked"
                             ? 0.5
                             : 1,
+                      }}
+                      onClick={() => {
+                        if (
+                          getBeerState(
+                            breweryData.Brewery + ":" + beer + beerIndex
+                          ) === "saved"
+                        ) {
+                          cycleBeerState(
+                            breweryData.Brewery + ":" + beer + beerIndex
+                          );
+                          openModal(
+                            breweryData.Brewery + ":" + beer + beerIndex
+                          );
+                        } else {
+                          cycleBeerState(
+                            breweryData.Brewery + ":" + beer + beerIndex
+                          );
+                        }
                       }}
                     >
                       {boldSearchQueryName(

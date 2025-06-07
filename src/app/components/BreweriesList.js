@@ -206,6 +206,7 @@ export default function BreweriesList({ searchTerm, section }) {
             </h1>
             <ul className="list-disc pl-8">
               {breweryData.Beers.map((beer, beerIndex) => {
+                const key = getKey(beer);
                 // if (getBeerState(breweryData.Brewery + ":" + beer) !== "none") {
                 //   console.log(
                 //     breweryData.Brewery + ":" + beer,
@@ -254,10 +255,17 @@ export default function BreweriesList({ searchTerm, section }) {
                       onClick={() => {
                         if (
                           getBeerState(breweryData.Brewery + ":" + beer) ===
-                          "saved"
+                            "saved" ||
+                          beerRatings?.[key]?.rating ||
+                          beerRatings?.[key]?.notes
                         ) {
                           openModal(breweryData.Brewery + ":" + beer);
-                          cycleBeerState(breweryData.Brewery + ":" + beer);
+                          if (
+                            !beerRatings?.[key]?.rating &&
+                            !beerRatings?.[key]?.notes
+                          ) {
+                            cycleBeerState(breweryData.Brewery + ":" + beer);
+                          }
                         } else {
                           cycleBeerState(breweryData.Brewery + ":" + beer);
                         }

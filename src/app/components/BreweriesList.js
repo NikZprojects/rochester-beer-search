@@ -23,6 +23,23 @@ export default function BreweriesList({ searchTerm, section }) {
     checked: "none",
   };
 
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("beerStates");
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          setBeerStates(new Map(Object.entries(parsed)));
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      setHydrated(true);
+    }
+  }, []);
+
   const [beerStates, setBeerStates] = useState(() => {
     if (typeof window !== "undefined") {
       const stored = localStorage.getItem(STORAGE_KEY);
@@ -38,14 +55,14 @@ export default function BreweriesList({ searchTerm, section }) {
     const key = getKey(beer);
     setBeerStates((prev) => {
       const newMap = new Map(prev);
-      const current = newMap.get(key) || "none";
+      const current = newMap?.get(key) || "none";
       newMap.set(key, state ? state : nextState[current]);
       return newMap;
     });
   };
 
   const getBeerState = (beer) => {
-    return beerStates.get(getKey(beer)) || "none";
+    return beerStates?.get(getKey(beer)) || "none";
   };
   const [beerRatings, setBeerRatings] = useState(() => {
     if (typeof window !== "undefined") {

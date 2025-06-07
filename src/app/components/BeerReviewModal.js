@@ -98,8 +98,16 @@ export default function BeerReviewModal({
           overflowY: "auto",
         }}
       >
-        <h2 id="modal-title" style={{ marginTop: 0 }}>
-          {beer.name || "Review Beer"}
+        <h2
+          id="modal-title"
+          style={{
+            marginTop: 0,
+            textAlign: "center",
+            fontSize: "1.2rem",
+            marginBottom: 15,
+          }}
+        >
+          {beer ? `Review ${beer}` : "Review Beer"}
         </h2>
 
         <label style={{ display: "block", marginBottom: 12 }}>
@@ -138,20 +146,25 @@ export default function BeerReviewModal({
           />
         </label>
 
-        <button
-          onClick={onClose}
-          style={{
-            padding: "0.5rem 1rem",
-            fontSize: 16,
-            borderRadius: 4,
-            border: "none",
-            backgroundColor: "#3BAA5C",
-            color: "white",
-            cursor: "pointer",
-          }}
+        <div
+          style={{ display: "flex", justifyContent: "center", width: "100%" }}
         >
-          Close
-        </button>
+          <button
+            onClick={onClose}
+            style={{
+              padding: "0.5rem 1rem",
+              fontSize: 16,
+              borderRadius: 4,
+              border: "none",
+              backgroundColor: "#3BAA5C",
+              color: "white",
+              cursor: "pointer",
+              textAlign: "center",
+            }}
+          >
+            Save
+          </button>
+        </div>
       </div>
     </>
   );

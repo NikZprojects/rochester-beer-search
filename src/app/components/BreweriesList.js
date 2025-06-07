@@ -48,6 +48,13 @@ export default function BreweriesList({ searchTerm, section }) {
   });
 
   useEffect(() => {
+    if (hydrated) {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      setBeerStates(stored ? new Map(JSON.parse(stored)) : new Map());
+    }
+  }, [hydrated]);
+
+  useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...beerStates]));
   }, [beerStates]);
 
@@ -199,10 +206,17 @@ export default function BreweriesList({ searchTerm, section }) {
             </h1>
             <ul className="list-disc pl-8">
               {breweryData.Beers.map((beer, beerIndex) => {
+                // if (getBeerState(breweryData.Brewery + ":" + beer) !== "none") {
+                //   console.log(
+                //     breweryData.Brewery + ":" + beer,
+                //     getBeerState(breweryData.Brewery + ":" + beer)
+                //   );
+                // }
+
                 return (
                   <li key={beerIndex}>
                     <BeerReviewModal
-                      beer={beer}
+                      beer={beer || ""}
                       breweryData={breweryData}
                       beerIndex={index}
                       isOpen={!!selectedBeer}
@@ -216,44 +230,33 @@ export default function BreweriesList({ searchTerm, section }) {
                       style={{
                         cursor: "pointer",
                         color:
-                          getBeerState(
-                            breweryData.Brewery + ":" + beer + beerIndex
-                          ) === "saved"
+                          getBeerState(breweryData.Brewery + ":" + beer) ===
+                          "saved"
                             ? "#3BAA5C"
-                            : getBeerState(
-                                breweryData.Brewery + ":" + beer + beerIndex
-                              ) === "checked"
+                            : getBeerState(breweryData.Brewery + ":" + beer) ===
+                              "checked"
                             ? ""
                             : "",
                         textDecoration:
-                          getBeerState(
-                            breweryData.Brewery + ":" + beer + beerIndex
-                          ) === "checked"
+                          getBeerState(breweryData.Brewery + ":" + beer) ===
+                          "checked"
                             ? "line-through"
                             : "none",
                         opacity:
-                          getBeerState(
-                            breweryData.Brewery + ":" + beer + beerIndex
-                          ) === "checked"
+                          getBeerState(breweryData.Brewery + ":" + beer) ===
+                          "checked"
                             ? 0.5
                             : 1,
                       }}
                       onClick={() => {
                         if (
-                          getBeerState(
-                            breweryData.Brewery + ":" + beer + beerIndex
-                          ) === "saved"
+                          getBeerState(breweryData.Brewery + ":" + beer) ===
+                          "saved"
                         ) {
-                          cycleBeerState(
-                            breweryData.Brewery + ":" + beer + beerIndex
-                          );
-                          openModal(
-                            breweryData.Brewery + ":" + beer + beerIndex
-                          );
+                          cycleBeerState(breweryData.Brewery + ":" + beer);
+                          openModal(breweryData.Brewery + ":" + beer);
                         } else {
-                          cycleBeerState(
-                            breweryData.Brewery + ":" + beer + beerIndex
-                          );
+                          cycleBeerState(breweryData.Brewery + ":" + beer);
                         }
                       }}
                     >

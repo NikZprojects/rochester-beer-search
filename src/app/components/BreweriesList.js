@@ -215,18 +215,20 @@ export default function BreweriesList({ searchTerm, section }) {
 
                 return (
                   <li key={beerIndex}>
-                    <BeerReviewModal
-                      beer={beer}
-                      breweryData={breweryData}
-                      beerIndex={index}
-                      isOpen={!!selectedBeer}
-                      onClose={() => setSelectedBeer(null)}
-                      getKey={getKey}
-                      beerRatings={beerRatings}
-                      updateBeerReview={updateBeerReview}
-                      cycleBeerState={cycleBeerState}
-                      key={beerIndex}
-                    />
+                    {selectedBeer === breweryData.Brewery + ":" + beer && (
+                      <BeerReviewModal
+                        beer={beer}
+                        breweryData={breweryData}
+                        beerIndex={index}
+                        isOpen={!!selectedBeer}
+                        onClose={() => setSelectedBeer(null)}
+                        getKey={getKey}
+                        beerRatings={beerRatings}
+                        updateBeerReview={updateBeerReview}
+                        cycleBeerState={cycleBeerState}
+                        key={beerIndex}
+                      />
+                    )}
                     <div
                       style={{
                         cursor: "pointer",
@@ -254,8 +256,8 @@ export default function BreweriesList({ searchTerm, section }) {
                           getBeerState(breweryData.Brewery + ":" + beer) ===
                           "saved"
                         ) {
-                          cycleBeerState(breweryData.Brewery + ":" + beer);
                           openModal(breweryData.Brewery + ":" + beer);
+                          cycleBeerState(breweryData.Brewery + ":" + beer);
                         } else {
                           cycleBeerState(breweryData.Brewery + ":" + beer);
                         }

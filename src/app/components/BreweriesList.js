@@ -24,8 +24,10 @@ export default function BreweriesList({ searchTerm, section }) {
   };
 
   const [beerStates, setBeerStates] = useState(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    return stored ? new Map(JSON.parse(stored)) : new Map();
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      return stored ? new Map(JSON.parse(stored)) : new Map();
+    }
   });
 
   useEffect(() => {
@@ -46,8 +48,10 @@ export default function BreweriesList({ searchTerm, section }) {
     return beerStates.get(getKey(beer)) || "none";
   };
   const [beerRatings, setBeerRatings] = useState(() => {
-    const stored = localStorage.getItem("beerRatings");
-    return stored ? JSON.parse(stored) : {};
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("beerRatings");
+      return stored ? JSON.parse(stored) : {};
+    }
   });
 
   useEffect(() => {

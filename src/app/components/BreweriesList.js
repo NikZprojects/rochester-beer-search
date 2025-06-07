@@ -216,7 +216,7 @@ export default function BreweriesList({ searchTerm, section }) {
                 return (
                   <li key={beerIndex}>
                     <BeerReviewModal
-                      beer={beer || ""}
+                      beer={beer}
                       breweryData={breweryData}
                       beerIndex={index}
                       isOpen={!!selectedBeer}
@@ -225,6 +225,7 @@ export default function BreweriesList({ searchTerm, section }) {
                       beerRatings={beerRatings}
                       updateBeerReview={updateBeerReview}
                       cycleBeerState={cycleBeerState}
+                      key={beerIndex}
                     />
                     <div
                       style={{

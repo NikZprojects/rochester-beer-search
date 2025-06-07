@@ -125,6 +125,7 @@ export default function BeerReviewModal({
               marginTop: 4,
               fontSize: 16,
               boxSizing: "border-box",
+              outline: '1px solid #e0e0e0',
             }}
           />
         </label>
@@ -142,6 +143,7 @@ export default function BeerReviewModal({
               fontSize: 16,
               boxSizing: "border-box",
               resize: "vertical",
+              outline: '1px solid #e0e0e0',
             }}
           />
         </label>

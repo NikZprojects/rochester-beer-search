@@ -400,43 +400,43 @@
   },
   {
     "Brewery": "Big Ditch",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "1",
     "Beers": ["Yuzu Rice Lager", "Pineapple Burner", "Deep Cut"]
   },
   {
     "Brewery": "Three Heads",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "2",
     "Beers": ["Rye Dye", "585 Hazy IPA", "Creamsicle Sour"]
   },
   {
     "Brewery": "Victory",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "3",
     "Beers": ["Prima Light", "Tiki Monkey", "DirtWolf"]
   },
   {
     "Brewery": "Founders",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "4",
     "Beers": ["KBS Caramel", "All Day Peach"]
   },
   {
     "Brewery": "Other Half",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "5",
     "Beers": []
   },
   {
     "Brewery": "Rising Storm",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "6",
     "Beers": ["Surprise Collaboration"]
   },
   {
     "Brewery": "Brewery Ardennes",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "7",
     "Beers": [
       "Summer Farm Ale",
@@ -446,19 +446,19 @@
   },
   {
     "Brewery": "Iron Tug",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "8",
     "Beers": ["Cream Ale", "Avast!", "Special Edition Cask (VIP)"]
   },
   {
     "Brewery": "Noble Shepherd",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "9",
     "Beers": ["Arnodl Palmer Sour", "Ambrosia Salad Sour"]
   },
   {
     "Brewery": "OSB Ciderworks",
-    "Section": "F",
+    "Section": "T",
     "Subsection": "10",
     "Beers": []
   }

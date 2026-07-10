@@ -1,754 +1,465 @@
 [
   {
-    "Brewery": "3 Sons Brewing",
-    "Section": "C",
-    "Subsection": "6",
-    "Beers": [
-      "Light Crispy Bois",
-      "Fractional BA Moonpie"
-    ]
-  },
-  {
-    "Brewery": "903 Brewers",
-    "Section": "C",
-    "Subsection": "7",
-    "Beers": [
-      "Coconut Macaroon Stout",
-      "Chupacabra Stout",
-      "Pickle Gose"
-    ]
-  },
-  {
-    "Brewery": "Angry Chair",
-    "Section": "C",
-    "Subsection": "4",
-    "Beers": [
-      "German Chocolate Cupcake Stout",
-      "Zest in Peace Wheat Ale",
-      "Tee Time Berliner"
-    ]
-  },
-  {
-    "Brewery": "Apex Brewing",
+    "Brewery": "Whitman",
     "Section": "A",
-    "Subsection": "7",
-    "Beers": [
-      "TBD"
-    ]
-  },
-  {
-    "Brewery": "Aporia Coffee Roasters",
-    "Section": "B",
-    "Subsection": "6",
-    "Beers": [
-      "Coffee!!"
-    ]
-  },
-  {
-    "Brewery": "Arkane Aleworks",
-    "Section": "C",
-    "Subsection": "9",
-    "Beers": [
-      "Baby Yoda Pants"
-    ]
-  },
-  {
-    "Brewery": "Aurora Brewing",
-    "Section": "C",
-    "Subsection": "14",
-    "Beers": [
-      "TBD"
-    ]
-  },
-  {
-    "Brewery": "Beelzebubbles Hard Seltzer",
-    "Section": "A",
-    "Subsection": "3",
-    "Beers": [
-      "TBD"
-    ]
-  },
-  {
-    "Brewery": "Beer Tree",
-    "Section": "T",
-    "Subsection": "6",
-    "Beers": [
-      "Trippy Tree: Berries & Cream",
-      "Canyons",
-      "Velcro Walls"
-    ]
-  },
-  {
-    "Brewery": "Big Ditch",
-    "Section": "T",
-    "Subsection": "12",
-    "Beers": [
-      "Carrot Cake Ale",
-      "Citraburner",
-      "Rocket Mule",
-      "Watermelon Summer Ale"
-    ]
-  },
-  {
-    "Brewery": "Birdhouse",
-    "Section": "C",
-    "Subsection": "19",
-    "Beers": [
-      "Early Bird Tea Wheat"
-    ]
-  },
-  {
-    "Brewery": "Blood Brothers",
-    "Section": "C",
-    "Subsection": "10",
-    "Beers": [
-      "Paradise Lost (Sweet Mango Heat)",
-      "Boya BA Donut Stout (VIP)"
-    ]
-  },
-  {
-    "Brewery": "Brazen",
-    "Section": "B",
-    "Subsection": "10",
-    "Beers": [
-      "The Peregrination Strikes Back (VIP)"
-    ]
-  },
-  {
-    "Brewery": "Brewery Ardennes",
-    "Section": "B",
-    "Subsection": "11",
-    "Beers": [
-      "Saison d'Epeautre",
-      "Hibiscus Passionfruit Sour",
-      "Special collab"
-    ]
-  },
-  {
-    "Brewery": "Brewery Ommegang",
-    "Section": "E",
-    "Subsection": "3",
-    "Beers": [
-      "Farm Fresh",
-      "Grand Cru",
-      "Juicy Blooms",
-      "Oak-Aged Watermelon Kolsch"
-    ]
-  },
-  {
-    "Brewery": "Briar Brothers",
-    "Section": "B",
-    "Subsection": "2",
-    "Beers": [
-      "Honest Guy",
-      "Big Dank Energy"
-    ]
-  },
-  {
-    "Brewery": "Buffalo Brewing",
-    "Section": "A",
-    "Subsection": "6",
-    "Beers": [
-      "Paczki Stout",
-      "Grodziskie",
-      "Refined Simplicity"
-    ]
-  },
-  {
-    "Brewery": "Bullfinch Brewpub",
-    "Section": "C",
-    "Subsection": "20",
-    "Beers": [
-      "Sunburst"
-    ]
-  },
-  {
-    "Brewery": "Buried Acorn",
-    "Section": "C",
-    "Subsection": "16",
-    "Beers": [
-      "Integumentary Funk",
-      "Ghoster Blanc"
-    ]
-  },
-  {
-    "Brewery": "Celestial Beerworks",
-    "Section": "C",
-    "Subsection": "8",
-    "Beers": [
-      "Dreamhack (Blackberry & Blueberry Berliner)",
-      "Andromeda DIPA",
-      "Packed to the Gills (VIP)"
-    ]
-  },
-  {
-    "Brewery": "Collage Cellars",
-    "Section": "D",
-    "Subsection": "5",
-    "Beers": [
-      "Masa Negra",
-      "Wine/Beer Hybrid"
-    ]
-  },
-  {
-    "Brewery": "Community Beer Works",
-    "Section": "T",
-    "Subsection": "4",
-    "Beers": [
-      "Thirst Aid Kit",
-      "Pineapple Princess"
-    ]
-  },
-  {
-    "Brewery": "Counterpart",
-    "Section": "D",
     "Subsection": "1",
     "Beers": [
-      "Across The Universe",
-      "Money Maker",
-      "Zombie Surprise"
+      "Big Iron",
+      "Now",
+      "Forager Tropical Punch",
+      "Shadows in My Room",
+      "I Hear America Singing"
     ]
   },
   {
-    "Brewery": "Dewey Beer",
-    "Section": "C",
-    "Subsection": "11",
-    "Beers": [
-      "Mighty Algorithm DIPA",
-      "Thrills Marshmallow Mai Thai (w/ Heavy Reel)"
-    ]
+    "Brewery": "Spotted Octopus",
+    "Section": "A",
+    "Subsection": "2",
+    "Beers": ["Garden Friends", "Octopus Ink"]
   },
   {
-    "Brewery": "DeWolf",
-    "Section": "T",
-    "Subsection": "11",
-    "Beers": [
-      "Clear Intentions"
-    ]
+    "Brewery": "Twin Fork",
+    "Section": "A",
+    "Subsection": "3",
+    "Beers": ["Minuet", "Chromatic Ale"]
+  },
+  {
+    "Brewery": "Talking Cursive",
+    "Section": "A",
+    "Subsection": "4",
+    "Beers": ["Bobby Fans Are People Too", "Sour Summer Haze"]
+  },
+  {
+    "Brewery": "Ithaca",
+    "Section": "A",
+    "Subsection": "5",
+    "Beers": ["Flower Power", "Lime Cucumber Golden Ale"]
+  },
+  {
+    "Brewery": "Apex",
+    "Section": "A",
+    "Subsection": "6",
+    "Beers": ["Nautical Miles", "Pool Party", "Cabana Monday"]
   },
   {
     "Brewery": "Eli Fish",
     "Section": "A",
-    "Subsection": "11",
-    "Beers": [
-      "Horchata Cream Ale",
-      "Oaked NZ Pils",
-      "Methodology #2 (VIP)"
-    ]
+    "Subsection": "7",
+    "Beers": ["Josephine", "Octodecim Ascendant", "Reel Lite"]
   },
   {
-    "Brewery": "Endless Life",
+    "Brewery": "Carton",
     "Section": "A",
-    "Subsection": "13",
-    "Beers": [
-      "Freedom Within Form",
-      "Stranger Than Kindness",
-      "Slow Motion Replay",
-      "Satellites Are Spinning"
-    ]
-  },
-  {
-    "Brewery": "Faircraft Brauhaus",
-    "Section": "D",
     "Subsection": "8",
-    "Beers": [
-      "Raven's Ring"
-    ]
+    "Beers": ["Drip", "077XX"]
   },
   {
-    "Brewery": "Fifth Frame",
-    "Section": "C",
-    "Subsection": "17",
-    "Beers": [
-      "TBA"
-    ]
-  },
-  {
-    "Brewery": "Finback",
-    "Section": "C",
-    "Subsection": "5",
-    "Beers": [
-      "Smooth Beats Miami Coconut IPA",
-      "Daily Catch IPA",
-      "BA Banana Drip (VIP)"
-    ]
-  },
-  {
-    "Brewery": "Founders",
-    "Section": "T",
-    "Subsection": "2",
-    "Beers": [
-      "Mortalis Bloom - Imperial Thorn",
-      "KBS Iced Latte"
-    ]
-  },
-  {
-    "Brewery": "Frequentem",
-    "Section": "B",
-    "Subsection": "14",
-    "Beers": [
-      "TBD"
-    ]
-  },
-  {
-    "Brewery": "Funktastic Meads",
-    "Section": "C",
-    "Subsection": "12",
-    "Beers": [
-      "Funktastic Fizz: The Kidz Are Gone"
-    ]
-  },
-  {
-    "Brewery": "Genesee (Cart)",
-    "Section": "M",
-    "Subsection": "Cart",
-    "Beers": [
-      "Hefeweizen",
-      "Vista Cream Ale"
-    ]
-  },
-  {
-    "Brewery": "Grow",
-    "Section": "D",
-    "Subsection": "6",
-    "Beers": [
-      "Mud",
-      "Haus Effect",
-      "Pretty Devious"
-    ]
-  },
-  {
-    "Brewery": "Gun Hill",
+    "Brewery": "Drekker",
     "Section": "A",
-    "Subsection": "13",
+    "Subsection": "9",
     "Beers": [
-      "Volksbier",
-      "Derby Winner"
+      "Braaaaaaaains - Billions of Peaches",
+      "Saved by the Bouyancy of Citrus"
     ]
   },
   {
-    "Brewery": "Happy Gut Sanctuary",
-    "Section": "T",
+    "Brewery": "Hop Farm",
+    "Section": "A",
     "Subsection": "10",
-    "Beers": [
-      "Kombucha!"
-    ]
-  },
-  {
-    "Brewery": "Heavy Reel",
-    "Section": "C",
-    "Subsection": "3",
-    "Beers": [
-      "Coastal Church IPA",
-      "Luvv Coconut Key Lime Pie Sour (One Stop Collab)"
-    ]
-  },
-  {
-    "Brewery": "Imprint Beer",
-    "Section": "C",
-    "Subsection": "2",
-    "Beers": [
-      "My Morning Juice (Peach Mango IPA)",
-      "Schmoojee Strawberry à la Mode"
-    ]
-  },
-  {
-    "Brewery": "Iron Tug",
-    "Section": "A",
-    "Subsection": "2",
-    "Beers": [
-      "Shore Leave: Cherry Cobbler",
-      "Banana Boat Hefeweizen"
-    ]
-  },
-  {
-    "Brewery": "Irondequoit Beer",
-    "Section": "A",
-    "Subsection": "8",
-    "Beers": [
-      "Out Backyard Ale",
-      "Liberator Doppelbock"
-    ]
-  },
-  {
-    "Brewery": "K2 Brothers",
-    "Section": "B",
-    "Subsection": "4",
-    "Beers": [
-      "New Zealand Pilsner",
-      "Raspberry Ripple Ice Cream Smoothie",
-      "Patriot Pop"
-    ]
+    "Beers": ["Acoustic Set", "Porchbier", "Margotberry", "Dinosaurs in Space"]
   },
   {
     "Brewery": "Katboocha",
-    "Section": "D",
-    "Subsection": "9",
-    "Beers": [
-      "Kombucha!"
-    ]
-  },
-  {
-    "Brewery": "Kent Beer Company",
-    "Section": "D",
-    "Subsection": "4",
-    "Beers": [
-      "El Jefe Mexican Lager",
-      "Pruner's Vacation Double Spruce IPA",
-      "Sugar Shack Maple Amber Ale"
-    ]
-  },
-  {
-    "Brewery": "Kettlehead",
-    "Section": "C",
-    "Subsection": "13",
-    "Beers": [
-      "TBD"
-    ]
-  },
-  {
-    "Brewery": "Keuka",
     "Section": "A",
-    "Subsection": "14",
-    "Beers": [
-      "El Crispy",
-      "AfterBurner",
-      "Sticky Drips (Bomb Pop)",
-      "Strawberrries & Cream Ale"
-    ]
+    "Subsection": "11",
+    "Beers": []
   },
   {
-    "Brewery": "Knucklehead",
+    "Brewery": "Lucky Frog",
     "Section": "A",
-    "Subsection": "5",
-    "Beers": [
-      "Tainted Haze"
-    ]
+    "Subsection": "12",
+    "Beers": ["Repose: Mango Lime + Pandan"]
   },
   {
     "Brewery": "Lilly Belle Meads",
     "Section": "A",
-    "Subsection": "16",
+    "Subsection": "13",
+    "Beers": ["Black Hole"]
+  },
+  {
+    "Brewery": "Nomxd",
+    "Section": "A",
+    "Subsection": "14",
     "Beers": [
-      "Bee Lucky",
-      "BA Bobby (VIP)"
+      "Dusk Til Dawn",
+      "Faewild",
+      "Days End",
+      "Special collaborations (VIP)"
     ]
   },
   {
-    "Brewery": "Living Roots Winery",
-    "Section": "T",
+    "Brewery": "3 Sons",
+    "Section": "B",
+    "Subsection": "1",
+    "Beers": ["Golden Ratio", "Fractional BA Steeple"]
+  },
+  {
+    "Brewery": "903 Brewers",
+    "Section": "B",
+    "Subsection": "2",
+    "Beers": [
+      "BA Double Chocolate Cherry",
+      "BA Ogre",
+      "BA Espresso Martini Stout",
+      "Sherman Bock",
+      "Barley One Barleywine"
+    ]
+  },
+  {
+    "Brewery": "Arkane Aleworks",
+    "Section": "B",
     "Subsection": "3",
+    "Beers": ["Caribbean Love Tap"]
+  },
+  {
+    "Brewery": "Brasserie Du Bas",
+    "Section": "B",
+    "Subsection": "4",
     "Beers": [
-      "TBD"
+      "Hypa #12 India Pale Ale",
+      "Los Tabarnacos Milkshake IPA",
+      "ÉPÉES Imperial Sweet Stout"
     ]
   },
   {
-    "Brewery": "Lolev Beer",
-    "Section": "T",
+    "Brewery": "Brewlihan Mead",
+    "Section": "B",
     "Subsection": "5",
     "Beers": [
-      "Grandar",
-      "Taupo"
+      "Serum: Blood Orange Creamsicle",
+      "Serum: Cucumber Lime",
+      "Serum: Blueberry Mojito"
     ]
   },
   {
-    "Brewery": "Magnamimous",
-    "Section": "C",
-    "Subsection": "13",
-    "Beers": [
-      "TBD"
-    ]
+    "Brewery": "Burdock",
+    "Section": "B",
+    "Subsection": "6",
+    "Beers": []
   },
   {
-    "Brewery": "Mortalis",
-    "Section": "C",
-    "Subsection": "1",
-    "Beers": [
-      "Hemera",
-      "Hydra Strawberry Peaches and Cream",
-      "Hydra Grape Strawberry Loganberry Toasted Marshmallow"
-    ]
+    "Brewery": "Dewey",
+    "Section": "B",
+    "Subsection": "7",
+    "Beers": ["Strawberry Pretzel Salad Gose", "Dewey Light Lime Lager"]
   },
   {
-    "Brewery": "Nine Maidens",
+    "Brewery": "DSSOLVR",
+    "Section": "B",
+    "Subsection": "8",
+    "Beers": ["Nite Life"]
+  },
+  {
+    "Brewery": "Evil Twin NYC",
     "Section": "B",
     "Subsection": "9",
     "Beers": [
-      "TBD"
+      "The Great Nothern Barrel-Aged Series 54 (VIP)",
+      "Double Danish American Guy",
+      "Luxurious Luxury Volume Sixteen"
     ]
   },
   {
-    "Brewery": "Noble Shepherd",
+    "Brewery": "Finback",
+    "Section": "B",
+    "Subsection": "10",
+    "Beers": [
+      "Free Floating DIPA",
+      "Family Style",
+      "Beyond IPA",
+      "Double Barrel Grazing On the Ordinary (VIP)"
+    ]
+  },
+  {
+    "Brewery": "Funktastic Meads",
+    "Section": "B",
+    "Subsection": "11",
+    "Beers": []
+  },
+  {
+    "Brewery": "Heavy Reel",
     "Section": "B",
     "Subsection": "12",
     "Beers": [
-      "TBD"
+      "Java Larry Coffee Porter",
+      "Luvv Orange Creamsicle",
+      "Luvv Pineapple Whip",
+      "Island End Coconut Porter"
     ]
   },
   {
-    "Brewery": "Nomxd Brew",
-    "Section": "A",
-    "Subsection": "10",
+    "Brewery": "Imprint",
+    "Section": "B",
+    "Subsection": "13",
     "Beers": [
-      "Days End",
-      "Dusk Till Dawn"
+      "Moda Italian Pilsner",
+      "Schmoojee Peach Pear Dragon",
+      "Triple Scoop",
+      "Coconut Expresso Vanilla"
     ]
   },
   {
-    "Brewery": "Okay Beer Company",
-    "Section": "C",
+    "Brewery": "Kettlehead",
+    "Section": "B",
+    "Subsection": "14",
+    "Beers": ["Dreamstate Double IPA", "Local Blue", "Piney", "Pulpy"]
+  },
+  {
+    "Brewery": "Magnanimous",
+    "Section": "B",
     "Subsection": "15",
     "Beers": [
-      "Frisco Kid",
-      "Control Freak",
-      "Midnight Kolsch"
-    ]
-  },
-  {
-    "Brewery": "OSB Ciderworks",
-    "Section": "C",
-    "Subsection": "18",
-    "Beers": [
-      "Kiwi Herman"
-    ]
-  },
-  {
-    "Brewery": "Other Half",
-    "Section": "T",
-    "Subsection": "8",
-    "Beers": [
-      "Extra Tall Kiwi",
-      "American Cheese"
-    ]
-  },
-  {
-    "Brewery": "Rising Storm",
-    "Section": "A",
-    "Subsection": "19",
-    "Beers": [
-      "Silk Cinderblocks",
-      "The Forbidden Fruit",
-      "Hawaiian Punch Sun",
-      "Moon & Sours"
-    ]
-  },
-  {
-    "Brewery": "Rohrbach (Cart)",
-    "Section": "M",
-    "Subsection": "Cart",
-    "Beers": [
-      "Tangerine Space Kitty",
-      "Helles",
-      "Kosmic Krush"
-    ]
-  },
-  {
-    "Brewery": "Round Table",
-    "Section": "A",
-    "Subsection": "15",
-    "Beers": [
-      "Motto Motto",
-      "Fake Recipe",
-      "Juntos",
-      "Bifröst"
-    ]
-  },
-  {
-    "Brewery": "Sager Beer Works",
-    "Section": "A",
-    "Subsection": "4",
-    "Beers": [
-      "Cali' Dreamin'",
-      "Fox + Hound Pub Ale",
-      "The Gladiator"
-    ]
-  },
-  {
-    "Brewery": "Sand City",
-    "Section": "A",
-    "Subsection": "1",
-    "Beers": [
-      "Oops I Hopped My Pants",
-      "White Sand Summer Ale"
-    ]
-  },
-  {
-    "Brewery": "Seed + Stone Cidery",
-    "Section": "D",
-    "Subsection": "3",
-    "Beers": [
-      "TBD"
-    ]
-  },
-  {
-    "Brewery": "Smoldered Society",
-    "Section": "T",
-    "Subsection": "4",
-    "Beers": [
-      "Automotive Sentience",
-      "Chud Life",
-      "Strike Anywhere"
-    ]
-  },
-  {
-    "Brewery": "Solitude",
-    "Section": "E",
-    "Subsection": "2",
-    "Beers": [
-      "Raspberry Buffalo"
+      "Bourbon Brunch Trail Stout (VIP)",
+      "Berry Yourself Alive",
+      "Slice Lord IPA"
     ]
   },
   {
     "Brewery": "Spyglass",
-    "Section": "T",
+    "Section": "C",
     "Subsection": "1",
-    "Beers": [
-      "State Machine",
-      "Cubist",
-      "Mango Frute Bomb",
-      "VIP Beer"
-    ]
+    "Beers": ["Art Deco", "Island Vibes"]
+  },
+  {
+    "Brewery": "Tin Barn",
+    "Section": "C",
+    "Subsection": "2",
+    "Beers": []
+  },
+  {
+    "Brewery": "Trophy",
+    "Section": "C",
+    "Subsection": "3",
+    "Beers": ["Tart Popped - Raspberry", "Top Bins"]
+  },
+  {
+    "Brewery": "Woven Water",
+    "Section": "C",
+    "Subsection": "4",
+    "Beers": ["Nevermore", "Failsafe", "Connections", "Luminous"]
+  },
+  {
+    "Brewery": "Twin Elephant",
+    "Section": "C",
+    "Subsection": "5",
+    "Beers": ["You Look Like A Helles", "Nosh: Rakau & Motueka"]
   },
   {
     "Brewery": "Stoneyard",
-    "Section": "A",
-    "Subsection": "3",
+    "Section": "C",
+    "Subsection": "6",
+    "Beers": ["Open Bags 8", "TBD"]
+  },
+  {
+    "Brewery": "Beelzebubbles",
+    "Section": "C",
+    "Subsection": "7",
+    "Beers": ["Limeade", "Blood Orange Punch", "Loganberry"]
+  },
+  {
+    "Brewery": "Sager",
+    "Section": "C",
+    "Subsection": "8",
+    "Beers": []
+  },
+  {
+    "Brewery": "DeWolf",
+    "Section": "C",
+    "Subsection": "9",
+    "Beers": []
+  },
+  {
+    "Brewery": "New Trail",
+    "Section": "C",
+    "Subsection": "10",
+    "Beers": ["Lazy River Pils", "24/7 Prickly Pear", "Creek Bend"]
+  },
+  {
+    "Brewery": "Irondequoit",
+    "Section": "C",
+    "Subsection": "11",
+    "Beers": ["Vanilla Cream Ale", "No Need To Wine IPA"]
+  },
+  {
+    "Brewery": "Lake Hour",
+    "Section": "C",
+    "Subsection": "12",
+    "Beers": ["Canned cocktails"]
+  },
+  {
+    "Brewery": "Embark Craft Cider",
+    "Section": "C",
+    "Subsection": "13",
+    "Beers": ["TBD"]
+  },
+  {
+    "Brewery": "Knucklehead",
+    "Section": "C",
+    "Subsection": "14",
+    "Beers": ["Mango Haze", "Watermelon Seltzer"]
+  },
+  {
+    "Brewery": "Mortalis",
+    "Section": "C",
+    "Subsection": "15",
     "Beers": [
-      "Open Bags 7"
+      "Gemini Bomb Pop",
+      "BA Nyx 2026",
+      "Zombie Gods & Goddesses",
+      "Siren Kick Out The Jams"
     ]
   },
   {
-    "Brewery": "Stormalong Cider",
-    "Section": "B",
-    "Subsection": "3",
+    "Brewery": "Kent",
+    "Section": "D",
+    "Subsection": "1",
     "Beers": [
-      "Legendary Dry",
-      "Mass Appeal",
-      "Red Skies at Night"
+      "Pruners Pale Ale",
+      "Raspberry Blonde Ale",
+      "Hans And Franz the Schwarzbier",
+      "Bob's Your Uncle"
     ]
   },
   {
     "Brewery": "Strangebird",
-    "Section": "B",
-    "Subsection": "1",
-    "Beers": [
-      "Sly Move",
-      "Four Pedals",
-      "Bumps in a Groove (VIP)"
-    ]
+    "Section": "D",
+    "Subsection": "2",
+    "Beers": ["Unfettered Soul", "Teutonic Chronic", "Barrel-Aged Pillow Head"]
   },
   {
     "Brewery": "Swiftwater",
-    "Section": "B",
-    "Subsection": "5",
+    "Section": "D",
+    "Subsection": "3",
+    "Beers": ["Kolsch", "Always Cloudy"]
+  },
+  {
+    "Brewery": "Grow",
+    "Section": "D",
+    "Subsection": "4",
     "Beers": [
-      "Kolsch"
+      "Supernaturally Hazy IPA",
+      "Community Garden Rice Lager",
+      "West Coast TBD"
     ]
   },
   {
-    "Brewery": "Thin Man",
-    "Section": "T",
-    "Subsection": "4",
+    "Brewery": "Grey Sail",
+    "Section": "D",
+    "Subsection": "5",
+    "Beers": ["Midnight Maiden", "Blueberry Break"]
+  },
+  {
+    "Brewery": "Happy Gut",
+    "Section": "D",
+    "Subsection": "6",
+    "Beers": []
+  },
+  {
+    "Brewery": "Birdhouse",
+    "Section": "D",
+    "Subsection": "7",
     "Beers": [
-      "TBD"
+      "Southern Hemisphere Pale Ale",
+      "Schwarzbier",
+      "Archimedes Barrel Aged Belgian Dark Strong (VIP)"
     ]
+  },
+  {
+    "Brewery": "Frequentem",
+    "Section": "D",
+    "Subsection": "8",
+    "Beers": []
+  },
+  {
+    "Brewery": "Solitude",
+    "Section": "E",
+    "Subsection": "1",
+    "Beers": ["Raspberry Lemonade", "Hazy pale ale"]
+  },
+  {
+    "Brewery": "Brazen",
+    "Section": "E",
+    "Subsection": "2",
+    "Beers": ["Dad Bod", "Caught in the Rain"]
+  },
+  {
+    "Brewery": "Aporia Coffee",
+    "Section": "E",
+    "Subsection": "3",
+    "Beers": ["Coffee!"]
+  },
+  {
+    "Brewery": "Big Ditch",
+    "Section": "F",
+    "Subsection": "1",
+    "Beers": ["Yuzu Rice Lager", "Pineapple Burner", "Deep Cut"]
   },
   {
     "Brewery": "Three Heads",
-    "Section": "T",
-    "Subsection": "7",
-    "Beers": [
-      "Giant Panda Dub Style IPA",
-      "Blueberry Kolsch"
-    ]
-  },
-  {
-    "Brewery": "Trophy",
-    "Section": "B",
-    "Subsection": "13",
-    "Beers": [
-      "Cloud Surfer",
-      "Strawberry Tart Popped"
-    ]
-  },
-  {
-    "Brewery": "Twin Elephant",
-    "Section": "A",
-    "Subsection": "17",
-    "Beers": [
-      "TBD"
-    ]
-  },
-  {
-    "Brewery": "Twin Fork Beer",
-    "Section": "B",
-    "Subsection": "8",
-    "Beers": [
-      "Summer Notes"
-    ]
-  },
-  {
-    "Brewery": "Underground Beer Lab",
-    "Section": "D",
-    "Subsection": "7",
-    "Beers": [
-      "Mild Return",
-      "Variable",
-      "Defies Logic"
-    ]
+    "Section": "F",
+    "Subsection": "2",
+    "Beers": ["Rye Dye", "585 Hazy IPA", "Creamsicle Sour"]
   },
   {
     "Brewery": "Victory",
-    "Section": "T",
+    "Section": "F",
+    "Subsection": "3",
+    "Beers": ["Prima Light", "Tiki Monkey", "DirtWolf"]
+  },
+  {
+    "Brewery": "Founders",
+    "Section": "F",
+    "Subsection": "4",
+    "Beers": ["KBS Caramel", "All Day Peach"]
+  },
+  {
+    "Brewery": "Other Half",
+    "Section": "F",
+    "Subsection": "5",
+    "Beers": []
+  },
+  {
+    "Brewery": "Rising Storm",
+    "Section": "F",
+    "Subsection": "6",
+    "Beers": ["Surprise Collaboration"]
+  },
+  {
+    "Brewery": "Brewery Ardennes",
+    "Section": "F",
+    "Subsection": "7",
+    "Beers": [
+      "Summer Farm Ale",
+      "Hibiscus Passionfruit Sour",
+      "Bourbon Barrel Aged Tripel"
+    ]
+  },
+  {
+    "Brewery": "Iron Tug",
+    "Section": "F",
+    "Subsection": "8",
+    "Beers": ["Cream Ale", "Avast!", "Special Edition Cask (VIP)"]
+  },
+  {
+    "Brewery": "Noble Shepherd",
+    "Section": "F",
     "Subsection": "9",
-    "Beers": [
-      "Witty Monkey",
-      "Peanut Butter Kandy Kake",
-      "Berry Monkey",
-      "Cloud Walker"
-    ]
+    "Beers": ["Arnodl Palmer Sour", "Ambrosia Salad Sour"]
   },
   {
-    "Brewery": "Watershed",
-    "Section": "D",
-    "Subsection": "2",
-    "Beers": [
-      "Special collab"
-    ]
-  },
-  {
-    "Brewery": "Wayward Lane",
-    "Section": "A",
-    "Subsection": "12",
-    "Beers": [
-      "On-Nomi",
-      "Over & Out",
-      "Suzanne’s Wings (VIP)"
-    ]
-  },
-  {
-    "Brewery": "Whitman",
-    "Section": "E",
-    "Subsection": "1",
-    "Beers": [
-      "All My Friends Are Bread",
-      "I Hear America Singing",
-      "I’m Still Bitter"
-    ]
-  },
-  {
-    "Brewery": "YAH",
-    "Section": "A",
-    "Subsection": "9",
-    "Beers": [
-      "Gushee Hydra",
-      "Orange Sherbert Push Pop"
-    ]
-  },
-  {
-    "Brewery": "",
-    "Section": "",
-    "Subsection": "",
+    "Brewery": "OSB Ciderworks",
+    "Section": "F",
+    "Subsection": "10",
     "Beers": []
   }
 ]

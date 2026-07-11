@@ -120,7 +120,7 @@ export default function BreweriesList({ searchTerm, section }) {
     const safeTerm = escapeRegExp(searchTerm.toLowerCase());
 
     const splitBeer = beerName.split(
-      new RegExp(`${safeTerm.toLowerCase()}`, "gi")
+      new RegExp(`${safeTerm.toLowerCase()}`, "gi"),
     );
     const searchTermsMatched = [
       ...beerName.matchAll(new RegExp(`${safeTerm.toLowerCase()}`, "gi")),
@@ -139,7 +139,7 @@ export default function BreweriesList({ searchTerm, section }) {
           </span>
         ) : (
           <span>{beerSubstring}</span>
-        )
+        ),
       );
       searchTermIndex += 1;
     }
@@ -147,6 +147,20 @@ export default function BreweriesList({ searchTerm, section }) {
   };
 
   const [sortByBrewery, setSortByBrewery] = useState(false);
+
+  function UntappdSearchLink({ brewery, beer }) {
+    const query = encodeURIComponent(`${brewery}${beer}`);
+    return (
+      <Link
+        href={`https://untappd.com/search?q=${query}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="ml-3 text-sky-600 text-sm"
+      >
+        [Untappd]
+      </Link>
+    );
+  }
 
   return (
     <div className="justify-start w-100">
@@ -163,14 +177,14 @@ export default function BreweriesList({ searchTerm, section }) {
 
       {listOfBreweries
         .filter((brewery) =>
-          section ? brewery.Section === section.toUpperCase() : true
+          section ? brewery.Section === section.toUpperCase() : true,
         )
         .filter((brewery) =>
           brewery.Beers.some(
             (beer) =>
               beer.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              brewery.Brewery.toLowerCase().includes(searchTerm.toLowerCase())
-          )
+              brewery.Brewery.toLowerCase().includes(searchTerm.toLowerCase()),
+          ),
         )
         .sort((a, b) =>
           sortByBrewery
@@ -178,10 +192,10 @@ export default function BreweriesList({ searchTerm, section }) {
               ? 1
               : -1
             : a.Section === b.Section
-            ? parseInt(a.Subsection) - parseInt(b.Subsection)
-            : a.Section > b.Section
-            ? 1
-            : -1
+              ? parseInt(a.Subsection) - parseInt(b.Subsection)
+              : a.Section > b.Section
+                ? 1
+                : -1,
         )
         .map((breweryData, index) => (
           <div className="pt-8" key={index}>
@@ -189,7 +203,7 @@ export default function BreweriesList({ searchTerm, section }) {
               {boldSearchQueryName(
                 breweryData.Brewery,
                 searchTerm,
-                "extrabold"
+                "extrabold",
               )}{" "}
               ({breweryData.Section}-{breweryData.Subsection})
               {!section ? (
@@ -238,9 +252,9 @@ export default function BreweriesList({ searchTerm, section }) {
                           "saved"
                             ? "#3BAA5C"
                             : getBeerState(breweryData.Brewery + ":" + beer) ===
-                              "checked"
-                            ? ""
-                            : "",
+                                "checked"
+                              ? ""
+                              : "",
                         textDecoration:
                           getBeerState(breweryData.Brewery + ":" + beer) ===
                           "checked"
@@ -274,8 +288,12 @@ export default function BreweriesList({ searchTerm, section }) {
                       {boldSearchQueryName(
                         formatTitle(beer),
                         searchTerm,
-                        "bold"
+                        "bold",
                       )}
+                      <UntappdSearchLink
+                        brewery={breweryData.Brewery}
+                        beer={formatTitle(beer)}
+                      />
                     </div>
                   </li>
                 );

@@ -246,50 +246,60 @@ export default function BreweriesList({ searchTerm, section }) {
                     )}
                     <div
                       style={{
-                        cursor: "pointer",
-                        color:
-                          getBeerState(breweryData.Brewery + ":" + beer) ===
-                          "saved"
-                            ? "#3BAA5C"
-                            : getBeerState(breweryData.Brewery + ":" + beer) ===
-                                "checked"
-                              ? ""
-                              : "",
-                        textDecoration:
-                          getBeerState(breweryData.Brewery + ":" + beer) ===
-                          "checked"
-                            ? "line-through"
-                            : "none",
-                        opacity:
-                          getBeerState(breweryData.Brewery + ":" + beer) ===
-                          "checked"
-                            ? 0.5
-                            : 1,
-                      }}
-                      onClick={() => {
-                        if (
-                          getBeerState(breweryData.Brewery + ":" + beer) ===
-                            "saved" ||
-                          beerRatings?.[key]?.rating ||
-                          beerRatings?.[key]?.notes
-                        ) {
-                          openModal(breweryData.Brewery + ":" + beer);
-                          if (
-                            !beerRatings?.[key]?.rating &&
-                            !beerRatings?.[key]?.notes
-                          ) {
-                            cycleBeerState(breweryData.Brewery + ":" + beer);
-                          }
-                        } else {
-                          cycleBeerState(breweryData.Brewery + ":" + beer);
-                        }
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px",
                       }}
                     >
-                      {boldSearchQueryName(
-                        formatTitle(beer),
-                        searchTerm,
-                        "bold",
-                      )}
+                      <div
+                        style={{
+                          cursor: "pointer",
+                          color:
+                            getBeerState(breweryData.Brewery + ":" + beer) ===
+                            "saved"
+                              ? "#3BAA5C"
+                              : getBeerState(
+                                    breweryData.Brewery + ":" + beer,
+                                  ) === "checked"
+                                ? ""
+                                : "",
+                          textDecoration:
+                            getBeerState(breweryData.Brewery + ":" + beer) ===
+                            "checked"
+                              ? "line-through"
+                              : "none",
+                          opacity:
+                            getBeerState(breweryData.Brewery + ":" + beer) ===
+                            "checked"
+                              ? 0.5
+                              : 1,
+                        }}
+                        onClick={() => {
+                          if (
+                            getBeerState(breweryData.Brewery + ":" + beer) ===
+                              "saved" ||
+                            beerRatings?.[key]?.rating ||
+                            beerRatings?.[key]?.notes
+                          ) {
+                            openModal(breweryData.Brewery + ":" + beer);
+                            if (
+                              !beerRatings?.[key]?.rating &&
+                              !beerRatings?.[key]?.notes
+                            ) {
+                              cycleBeerState(breweryData.Brewery + ":" + beer);
+                            }
+                          } else {
+                            cycleBeerState(breweryData.Brewery + ":" + beer);
+                          }
+                        }}
+                      >
+                        {boldSearchQueryName(
+                          formatTitle(beer),
+                          searchTerm,
+                          "bold",
+                        )}
+                      </div>
+
                       <UntappdSearchLink
                         brewery={breweryData.Brewery}
                         beer={formatTitle(beer)}

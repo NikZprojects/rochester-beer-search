@@ -20,7 +20,7 @@ export default function BeerReviewModal({
 
   // Local input state to handle typing without cutting chars off
   const [ratingInput, setRatingInput] = useState(
-    savedRating !== "" ? savedRating.toString() : ""
+    savedRating !== "" ? savedRating.toString() : "",
   );
 
   useEffect(() => {
@@ -46,34 +46,27 @@ export default function BeerReviewModal({
   const handleNotesChange = (e) => {
     updateBeerReview(beer, { notes: e.target.value });
   };
+
   const isDarkMode =
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   return (
     <>
-      {/* Overlay */}
+      {/* Overlay - now correctly covers the full screen and dims the background */}
       <div
         onClick={onClose}
         style={{
           position: "fixed",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          backgroundColor: isDarkMode ? "#222" : "#fff",
-          color: isDarkMode ? "#eee" : "#222",
-          padding: "1.5rem 2rem",
-          borderRadius: 8,
-          boxShadow: isDarkMode
-            ? "0 8px 24px rgba(0,0,0,0.8)"
-            : "0 8px 24px rgba(0,0,0,0.2)",
-          zIndex: 1000,
-          width: "90vw",
-          maxWidth: 400,
-          maxHeight: "80vh",
-          overflowY: "auto",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.55)",
+          zIndex: 999,
         }}
       />
+
       {/* Modal */}
       <div
         role="dialog"
@@ -84,34 +77,86 @@ export default function BeerReviewModal({
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          backgroundColor: isDarkMode ? "#555" : "#fff",
-          color: isDarkMode ? "black" : "#222",
-          padding: "1.5rem 2rem",
-          borderRadius: 8,
-          boxShadow: isDarkMode
-            ? "0 8px 24px rgba(0,0,0,0.8)"
-            : "0 8px 24px rgba(0,0,0,0.2)",
+          backgroundColor: isDarkMode ? "#2b2b2b" : "#fff",
+          color: isDarkMode ? "#f0f0f0" : "#222",
+          padding: "1.75rem 2rem 2rem",
+          borderRadius: 12,
+          boxShadow: "0 20px 50px rgba(0, 0, 0, 0.35)",
           zIndex: 1000,
           width: "90vw",
-          maxWidth: 400,
-          maxHeight: "80vh",
+          maxWidth: 420,
+          maxHeight: "85vh",
           overflowY: "auto",
+          border: isDarkMode ? "1px solid #444" : "1px solid #eee",
         }}
       >
-        <h2
-          id="modal-title"
+        {/* Header row with title + close button */}
+        <div
           style={{
-            marginTop: 0,
-            textAlign: "center",
-            fontSize: "1.2rem",
-            marginBottom: 15,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginBottom: 16,
+            paddingBottom: 12,
+            borderBottom: isDarkMode ? "1px solid #444" : "1px solid #f0f0f0",
           }}
         >
-          {beer ? `Review ${beer}` : "Review Beer"}
-        </h2>
+          <h2
+            id="modal-title"
+            style={{
+              margin: 0,
+              fontSize: "1.25rem",
+              fontWeight: 600,
+              lineHeight: 1.3,
+              paddingRight: 12,
+            }}
+          >
+            {beer ? `Review ${beer}` : "Review Beer"}
+          </h2>
 
-        <label style={{ display: "block", marginBottom: 12 }}>
-          Rating (0 to 5):
+          <button
+            onClick={onClose}
+            aria-label="Close"
+            style={{
+              flexShrink: 0,
+              width: 32,
+              height: 32,
+              borderRadius: "50%",
+              border: "none",
+              backgroundColor: isDarkMode ? "#444" : "#f2f2f2",
+              color: isDarkMode ? "#f0f0f0" : "#555",
+              fontSize: 18,
+              lineHeight: 1,
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              transition: "background-color 0.15s ease",
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = isDarkMode
+                ? "#555"
+                : "#e4e4e4";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = isDarkMode
+                ? "#444"
+                : "#f2f2f2";
+            }}
+          >
+            ×
+          </button>
+        </div>
+
+        <label
+          style={{
+            display: "block",
+            marginBottom: 16,
+            fontSize: 14,
+            fontWeight: 500,
+          }}
+        >
+          Rating (0 to 5)
           <input
             type="number"
             step={0.25}
@@ -121,29 +166,46 @@ export default function BeerReviewModal({
             onChange={handleRatingChange}
             style={{
               width: "100%",
-              padding: 8,
-              marginTop: 4,
+              padding: "10px 12px",
+              marginTop: 6,
               fontSize: 16,
               boxSizing: "border-box",
-              outline: '1px solid #e0e0e0',
+              borderRadius: 6,
+              border: isDarkMode ? "1px solid #555" : "1px solid #ddd",
+              backgroundColor: isDarkMode ? "#3a3a3a" : "#fafafa",
+              color: isDarkMode ? "#f0f0f0" : "#222",
+              outline: "none",
             }}
           />
         </label>
 
-        <label style={{ display: "block", marginBottom: 12 }}>
-          Notes:
+        <label
+          style={{
+            display: "block",
+            marginBottom: 20,
+            fontSize: 14,
+            fontWeight: 500,
+          }}
+        >
+          Notes
           <textarea
             value={savedNotes}
             onChange={handleNotesChange}
             rows={5}
+            placeholder="What did you think?"
             style={{
               width: "100%",
-              padding: 8,
-              marginTop: 4,
+              padding: "10px 12px",
+              marginTop: 6,
               fontSize: 16,
               boxSizing: "border-box",
               resize: "vertical",
-              outline: '1px solid #e0e0e0',
+              borderRadius: 6,
+              border: isDarkMode ? "1px solid #555" : "1px solid #ddd",
+              backgroundColor: isDarkMode ? "#3a3a3a" : "#fafafa",
+              color: isDarkMode ? "#f0f0f0" : "#222",
+              outline: "none",
+              fontFamily: "inherit",
             }}
           />
         </label>
@@ -154,14 +216,23 @@ export default function BeerReviewModal({
           <button
             onClick={onClose}
             style={{
-              padding: "0.5rem 1rem",
+              padding: "0.6rem 1.75rem",
               fontSize: 16,
-              borderRadius: 4,
+              fontWeight: 600,
+              borderRadius: 6,
               border: "none",
               backgroundColor: "#3BAA5C",
               color: "white",
               cursor: "pointer",
               textAlign: "center",
+              boxShadow: "0 2px 6px rgba(59, 170, 92, 0.35)",
+              transition: "background-color 0.15s ease",
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = "#329651";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = "#3BAA5C";
             }}
           >
             Save

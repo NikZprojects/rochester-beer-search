@@ -17,6 +17,12 @@ export default function BreweriesList({ searchTerm, section }) {
 
   const openModal = (beer) => setSelectedBeer(beer);
 
+  //TODO: 2 bugs
+  // 1. If 2 beers share the same name (i.e. "TBD") they will share the same review modal
+  // 2. If a company has no beers listed they won't appear at all
+  // 2a. Consider adding "Custom Entry" to all breweries without beers
+  // 3. Consider adding "Custom Entry" to all breweries (w/ a (+) button to add a second, third, etc.)
+
   const nextState = {
     none: "saved",
     saved: "checked",
